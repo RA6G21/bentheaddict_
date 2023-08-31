@@ -1,0 +1,141 @@
+body, h1, h2, form,{
+            margin: 0;
+            padding: 0;
+        }
+        p{
+            color: black;
+            font-weight: bold;
+        }
+
+
+        /* Basic styling */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+        }
+
+        main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+
+
+        .background {
+            /* Constant background image styling */
+            background-image: url('path-to-your-main-image.jpg');
+            background-size: cover;
+            background-position: center;
+            opacity: 0.5;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+        }
+
+        .slideshow-background {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 50%;
+            height: 70%;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            position: relative;
+        }
+
+       .slideshow {
+            /*position: relative;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;*/
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            animation: slideshow-animation 10s infinite;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            overflow: hidden;
+            z-index: 0;
+        }
+
+        .slideshow img {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            animation: fadeAnimation 15s infinite;
+            opacity: 0;
+
+        }
+
+        .slideshow img:nth-child(1) {
+            animation-delay: 0s;
+        }
+
+        .slideshow img:nth-child(2) {
+            animation-delay: 5s;
+        }
+
+        .slideshow img:nth-child(3) {
+            animation-delay: 10s;
+        }
+
+        @keyframes fadeAnimation {
+            5% {
+                opacity: 0;
+            }
+            20% {
+                opacity: 1;
+            }
+            33.33% {
+                opacity: 1;
+            }
+            53.33% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 0;
+            }
+        }
+
+        .booking-form {
+            padding: 2rem;
+            width: 80%;
+            max-width: 400px;
+            color: white; /* Text color */
+            z-index: 1;
+        }
+
+        form label, form input, form button {
+            display: block;
+            margin-bottom: 1rem;
+        }
+
+        form button {
+            background-color: #333;
+            color: white;
+            padding: 0.5rem 1rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        form button:hover {
+            background-color: #555;
+        }
