@@ -33,13 +33,15 @@ body, h1, h2, form,{
 
         .background {
             /* Constant background image styling */
-            background-image: url('path-to-your-main-image.jpg');
+            background-image: url(https://github.com/RA6G21/bentheaddict_/blob/main/Screenshot%202023-08-30%20231713.png);
             background-size: cover;
             background-position: center;
             opacity: 0.5;
+            background-repeat: no-repeat;
             width: 100%;
             height: 100%;
-            position: absolute;
+            position: relative;
+            overflow: hidden;
         }
 
         .slideshow-background {
@@ -113,7 +115,7 @@ body, h1, h2, form,{
                 opacity: 0;
             }
         }
-         @media (max-width: 767px) {
+        @media (max-width: 767px) {
           main {
             flex-direction: column;
             align-items: center;
@@ -127,14 +129,20 @@ body, h1, h2, form,{
 
           .slideshow-background {
              display: relative;
-             width: 50%;
+             width: 65%;
              height: 70%;
              position: relative;
-             overflow: hidden;
+             overflow: auto;
              margin: 0 auto; /* Center the container */
          }
 
-         .slideshow,
+         .slideshow {
+            position: absolute;
+            top: 0;
+            left: 0;
+            white-space: nowrap; /* Prevent line breaks between images */
+            overflow: auto; /* Enable horizontal scrolling */
+         }    
          .booking-form {
              position: absolute;
              top: 0;
