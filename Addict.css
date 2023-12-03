@@ -115,24 +115,32 @@ body, h1, h2, form,{
         }
          @media (max-width: 767px) {
              main {
-              flex-direction: column;
-              height: auto;
+               flex-direction: column;
+               height: auto;
             }
+
             .slideshow-background {
-              width: 90%;
-              height: auto;
+               width: 90%;
+               height: auto;
             }
+
             .slideshow {
-              flex-direction: column;
+               flex-direction: column;
             }
-           .slideshow img {
-             position: static;
-             width: 100%;
-             height: auto;
-             animation: none;
-             opacity: 1;
+
+            .slideshow img {
+              position: static;
+              width: 100%;
+              height: auto;
+              animation: none;
+              opacity: 1;
             }
-        }
+
+            .booking-form {
+              width: 90%; /* Adjust the width for smaller screens */
+              margin-top: 1rem; /* Add some space between slideshow and form */
+            }
+         }
 
 
 
