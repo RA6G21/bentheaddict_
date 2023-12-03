@@ -33,15 +33,13 @@ body, h1, h2, form,{
 
         .background {
             /* Constant background image styling */
-            background-image: url(https://github.com/RA6G21/bentheaddict_/blob/main/Screenshot%202023-08-30%20231713.png);
+            background-image: url('path-to-your-main-image.jpg');
             background-size: cover;
             background-position: center;
             opacity: 0.5;
-            background-repeat: no-repeat;
             width: 100%;
             height: 100%;
             position: absolute;
-            overflow: auto;
         }
 
         .slideshow-background {
@@ -115,15 +113,11 @@ body, h1, h2, form,{
                 opacity: 0;
             }
         }
-         
+        /* Small screens (phones) */
         @media (max-width: 767px) {
           main {
             flex-direction: column;
             align-items: center;
-         }
-           .background {
-            position: absolute;
-            overflow: auto;
          }
 
           .slideshow-and-form-container {
@@ -134,7 +128,7 @@ body, h1, h2, form,{
 
           .slideshow-background {
              display: relative;
-             width: 65%;
+             width: 50%;
              height: 70%;
              position: relative;
              overflow: hidden;
@@ -164,10 +158,17 @@ body, h1, h2, form,{
              color: white;
              z-index: 1;
          }
-
         }
 
 
+
+        .booking-form {
+            padding: 2rem;
+            width: 80%;
+            max-width: 400px;
+            color: white; /* Text color */
+            z-index: 1;
+        }
 
         form label, form input, form button {
             display: block;
