@@ -168,6 +168,8 @@ body, h1, h2, form,{
              object-fit: cover;
              animation: fadeAnimation 15s infinite;
              opacity: 0;
+             z-index: 0;
+             pointer-events: none;
          }
 
          .booking-form {
