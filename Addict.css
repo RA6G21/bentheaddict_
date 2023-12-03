@@ -54,6 +54,9 @@ body, h1, h2, form,{
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
             position: relative;
+            z-index: 0;
+            z-index: 0;
+            pointer-events: none;
         }
          .booking-form {
              padding: 2rem;
@@ -73,12 +76,12 @@ body, h1, h2, form,{
             left: 0;
             width: 100%;
             height: 100%;
-            animation: slideshow-animation 10s infinite;
             display: flex;
             align-items: center;
             justify-content: space-between;
             overflow: hidden;
             z-index: 0;
+            pointer-events: none;
         }
 
         .slideshow img {
@@ -128,7 +131,7 @@ body, h1, h2, form,{
 
           .slideshow-and-form-container {
              width: 100%;
-              box-sizing: border-box;
+             box-sizing: border-box;
              padding: 1rem;
          }
 
@@ -139,6 +142,7 @@ body, h1, h2, form,{
              position: relative;
              overflow: auto;
              margin: 0 auto; /* Center the container */
+             z-index: 0;
          }
 
          .slideshow {
