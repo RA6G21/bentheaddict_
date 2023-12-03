@@ -142,10 +142,6 @@ body, h1, h2, form,{
          }
 
          .slideshow {
-            position: absolute;
-            top: 0;
-            left: 0;
-            white-space: nowrap; /* Prevent line breaks between images */
             overflow: auto; /* Enable horizontal scrolling */
          }    
          .booking-form {
