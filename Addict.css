@@ -40,8 +40,8 @@ body, h1, h2, form,{
             background-repeat: no-repeat;
             width: 100%;
             height: 100%;
-            position: relative;
-            overflow: hidden;
+            position: absolute;
+            overflow: auto;
         }
 
         .slideshow-background {
@@ -121,8 +121,8 @@ body, h1, h2, form,{
             align-items: center;
          }
            .background {
-            position: relative;
-            overflow: hidden;
+            position: absolute;
+            overflow: auto;
          }
 
           .slideshow-and-form-container {
