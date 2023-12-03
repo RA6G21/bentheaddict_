@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="Addict.css">
     <style>
         /* Reset some default styles */
         body, h1, h2, form,{
@@ -41,13 +40,15 @@
 
         .background {
             /* Constant background image styling */
-            background-image: url('path-to-your-main-image.jpg');
+            background-image: url(https://github.com/RA6G21/bentheaddict_/blob/main/Screenshot%202023-08-30%20231713.png);
             background-size: cover;
             background-position: center;
             opacity: 0.5;
+            background-repeat: no-repeat;
             width: 100%;
             height: 100%;
             position: absolute;
+            overflow: hidden;
         }
 
         .slideshow-background {
@@ -78,7 +79,7 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
-            overflow: hidden;
+            overflow: auto;
             z-index: 0;
         }
 
@@ -129,20 +130,30 @@
 
           .slideshow-and-form-container {
              width: 100%;
-              box-sizing: border-box;
+             box-sizing: border-box;
              padding: 1rem;
          }
+            .background {
+              position: absolute;
+               overflow: auto;
+        }
 
           .slideshow-background {
              display: relative;
-             width: 50%;
+             width: 65%;
              height: 70%;
              position: relative;
-             overflow: hidden;
+             overflow: auto;
              margin: 0 auto; /* Center the container */
          }
 
-         .slideshow,
+         .slideshow {
+            position: absolute;
+            top: 0;
+            left: 0;
+            white-space: nowrap; /* Prevent line breaks between images */
+            overflow: auto; /* Enable horizontal scrolling */
+         }    
          .booking-form {
              position: absolute;
              top: 0;
@@ -156,12 +167,18 @@
              width: 100%;
              height: 100%;
              object-fit: cover;
+             animation: fadeAnimation 15s infinite;
+             opacity: 0;
          }
 
          .booking-form {
              padding: 2rem;
              color: white;
              z-index: 1;
+             
+         }
+         .booking-form p {
+           animation: fadeTextAnimation 5s infinite; 
          }
         }
 
@@ -194,19 +211,20 @@
 
     <main>
 
-        <section class="background"><img src="https://github.com/RA6G21/bentheaddict_/blob/main/Screenshot%202023-08-30%20231713.png" width=100% height=100%></section>
+        <section class="background"><img src="https://raw.githubusercontent.com/RA6G21/bentheaddict_/main/Screenshot%202023-08-30%20231713.png" width=100% height=100%></section>
 
         <section class="slideshow-background">
-            <p>Available only on Weekends</p>
             <div class="slideshow">
-                <img src="https://github.com/RA6G21/bentheaddict_/blob/main/Screenshot%202023-08-30%20231610.png" alt="Slide 1">
-                <img src="https://github.com/RA6G21/bentheaddict_/blob/main/Screenshot%202023-08-30%20231804.png" alt="Slide 2">
-                <img src="https://github.com/RA6G21/bentheaddict_/blob/main/Screenshot%202023-08-30%20231636.png" alt="Slide 3">
+                <img src="https://raw.githubusercontent.com/RA6G21/bentheaddict_/main/Screenshot%202023-08-30%20231636.png" width=70% height=70% alt="Slide 1">
+                <img src="https://raw.githubusercontent.com/RA6G21/bentheaddict_/main/Screenshot%202023-08-30%20231610.png" width=70% height=70% alt="Slide 2">
+                <img src="https://raw.githubusercontent.com/RA6G21/bentheaddict_/main/Screenshot%202023-08-30%20231804.png" width=70% height=70% alt="Slide 3">
             </div>
             <div class="booking-form">
                 <h2>Book a Photoshoot</h2>
+                
 
-                <form>
+                <form width=70% height=70% >
+                    <p>Available only on Weekends</p>
                     <label for="email">Email:</label>
                     <input type="email" id="email" name="email" required>
 
@@ -228,7 +246,7 @@
                      <option value="14:00">2:00 PM</option>
 
                      <option value="16:00">4:00 PM</option>
-
+                     
                      <option value="18:00">6:00 PM</option>
                    </select>
 
