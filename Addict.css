@@ -170,9 +170,7 @@ body, h1, h2, form,{
              color: white;
              z-index: 1;
          }
-          .booking-form p {
-           animation: fadeTextAnimation 5s infinite; 
-         }
+
         }
 
 
