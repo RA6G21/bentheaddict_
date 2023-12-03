@@ -120,6 +120,10 @@ body, h1, h2, form,{
             flex-direction: column;
             align-items: center;
          }
+           .background {
+            position: relative;
+            overflow: hidden;
+         }
 
           .slideshow-and-form-container {
              width: 100%;
