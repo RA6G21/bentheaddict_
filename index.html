@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="Addict.css">
     <style>
         /* Reset some default styles */
         body, h1, h2, form,{
@@ -40,15 +41,13 @@
 
         .background {
             /* Constant background image styling */
-            background-image: url(https://github.com/RA6G21/bentheaddict_/blob/main/Screenshot%202023-08-30%20231713.png);
+            background-image: url('path-to-your-main-image.jpg');
             background-size: cover;
             background-position: center;
             opacity: 0.5;
-            background-repeat: no-repeat;
             width: 100%;
             height: 100%;
             position: absolute;
-            overflow: hidden;
         }
 
         .slideshow-background {
@@ -79,7 +78,7 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
-            overflow: auto;
+            overflow: hidden;
             z-index: 0;
         }
 
@@ -122,7 +121,6 @@
                 opacity: 0;
             }
         }
-       
         @media (max-width: 767px) {
           main {
             flex-direction: column;
@@ -131,17 +129,13 @@
 
           .slideshow-and-form-container {
              width: 100%;
-             box-sizing: border-box;
+              box-sizing: border-box;
              padding: 1rem;
          }
-            .background {
-              position: absolute;
-               overflow: auto;
-        }
 
           .slideshow-background {
              display: relative;
-             width: 65%;
+             width: 50%;
              height: 70%;
              position: relative;
              overflow: hidden;
@@ -170,9 +164,7 @@
              padding: 2rem;
              color: white;
              z-index: 1;
-             
          }
-     
         }
 
 
@@ -204,21 +196,19 @@
 
     <main>
 
-        <section class="background"><img src="https://raw.githubusercontent.com/RA6G21/bentheaddict_/main/Screenshot%202023-08-30%20231713.png" width=100% height=100%></section>
+        <section class="background"><img src="C:/Users/rilwa/OneDrive/Desktop/photography website/Screenshot 2023-08-30 231713.png" width=100% height=100%></section>
 
         <section class="slideshow-background">
+            <p>Available only on Weekends</p>
             <div class="slideshow">
-                <img src="https://raw.githubusercontent.com/RA6G21/bentheaddict_/main/Screenshot%202023-08-30%20231636.png" width=70% height=70% alt="Slide 1">
-                <img src="https://raw.githubusercontent.com/RA6G21/bentheaddict_/main/Screenshot%202023-08-30%20231610.png" width=70% height=70% alt="Slide 2">
-                <img src="https://raw.githubusercontent.com/RA6G21/bentheaddict_/main/Screenshot%202023-08-30%20231804.png" width=70% height=70% alt="Slide 3">
+                <img src="C:/Users/rilwa/OneDrive/Desktop/photography website/Screenshot 2023-08-30 231636.png" alt="Slide 1">
+                <img src="C:/Users/rilwa/OneDrive/Desktop/photography website/Screenshot 2023-08-30 231610.png" alt="Slide 2">
+                <img src="C:/Users/rilwa/OneDrive/Desktop/photography website/Screenshot 2023-08-30 231804.png" alt="Slide 3">
             </div>
             <div class="booking-form">
                 <h2>Book a Photoshoot</h2>
-                <p>Available only on Weekends</p>
-                
 
-                <form width=70% height=70% >
-
+                <form>
                     <label for="email">Email:</label>
                     <input type="email" id="email" name="email" required>
 
@@ -240,7 +230,7 @@
                      <option value="14:00">2:00 PM</option>
 
                      <option value="16:00">4:00 PM</option>
-                     
+
                      <option value="18:00">6:00 PM</option>
                    </select>
 
